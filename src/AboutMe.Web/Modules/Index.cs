@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Nancy;
+﻿using Nancy;
 
 namespace AboutMe.Web.Modules
 {
@@ -10,9 +6,7 @@ namespace AboutMe.Web.Modules
     {
         public Index()
         {
-
             Get["/"] = x => View["Index"];
-
         }
     }
 }
