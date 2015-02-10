@@ -1,0 +1,104 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tommy James Parnell</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tommy James Parnell Web Application Developer">
+    <meta name="author" content="Tommy James Parnell">
+    <link rel="shortcut icon" href="/Images/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/Content/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="/Content/font-awesome.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="/Content/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container">
+            <img class="profile-image img-responsive pull-left" src="/Images/profile.png" alt="James Lee" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Tommy Parnell</h1>
+                <h2 class="desc">Web App Developer</h2>
+                <ul class="social list-inline">
+                    <li><a href="https://twitter.com/TerribleDev"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/pub/tommy-parnell/24/722/63a"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="last-item"><a href="https://github.com/tparnell8"><i class="fa fa-github-alt"></i></a></li>
+                </ul>
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary pull-right" href="mailto:tparnell8@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>
+        </div><!--//container-->
+    </header><!--//header-->
+
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                @Html.Partial("AboutMe")
+               @* @Html.Partial("Projects")*@
+
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Software Engineer <span class="place"><a href="http://vistaprint.com">Vistaprint.com</a></span> <span class="year">(2015 - Present)</span></h3>
+                                <p>Work on our gallery, and search engine platform</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Lead Systems Administrator <span class="place"><a href="http://vistaprint.com">Vistaprint.com</a></span> <span class="year">(2011 - 2015)</span></h3>
+                                <p>Technical lead for our Monitoring and site uptime team</p>
+                            </div><!--//item-->
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+                <section class="github section">
+                    <div class="section-inner">
+                        <div id="ghfeed" class="ghfeed">
+                        </div><!--//ghfeed-->
+
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+            </div><!--//primary-->
+            @Html.Partial("RightPane")
+        </div><!--//row-->
+    </div><!--//masonry-->
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+    <!-- Javascript -->
+    <script type="text/javascript" src="/Scripts/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-rss/dist/jquery.rss.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="/Scripts/main.js"></script>
+</body>
+</html>
