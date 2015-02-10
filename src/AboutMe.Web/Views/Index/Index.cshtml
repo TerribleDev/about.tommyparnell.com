@@ -1,4 +1,7 @@
-﻿@{
+﻿@using System.Globalization
+@using System.Linq
+@using AboutMe.Web
+@{
     Layout = null;
 }
 
@@ -70,14 +73,20 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </section><!--//section-->
+
+            @if (!Settings.IsMobile(Request.Headers.UserAgent))
+            {
                 <section class="github section">
                     <div class="section-inner">
                         <div id="ghfeed" class="ghfeed">
                         </div><!--//ghfeed-->
                     </div><!--//secton-inner-->
                 </section><!--//section-->
+            }
+               
             </div><!--//primary-->
             @Html.Partial("RightPane")
+        
     </div><!--//row-->
 </div><!--//masonry-->
 <!-- ******FOOTER****** -->
