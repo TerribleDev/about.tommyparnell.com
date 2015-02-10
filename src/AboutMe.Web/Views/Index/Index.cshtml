@@ -74,15 +74,12 @@
                     </div><!--//section-inner-->
                 </section><!--//section-->
 
-            @if (!Settings.IsMobile(Request.Headers.UserAgent))
-            {
-                <section class="github section">
+                <section class="github section visible-md visible-lg">
                     <div class="section-inner">
                         <div id="ghfeed" class="ghfeed">
                         </div><!--//ghfeed-->
                     </div><!--//secton-inner-->
                 </section><!--//section-->
-            }
                
             </div><!--//primary-->
             @Html.Partial("RightPane")
