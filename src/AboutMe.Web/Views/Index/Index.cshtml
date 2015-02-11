@@ -20,8 +20,8 @@
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="/Content/font-awesome.css">
     <!-- github acitivity css -->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+    @*<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">*@
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="/Content/styles.css">
@@ -70,6 +70,7 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </section><!--//section-->
+                @Html.Partial("Projects")
                 <aside class="blog section">
                     <div class="section-inner">
                         <h2 class="heading">Latest Blog Posts</h2>
@@ -78,12 +79,13 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
-                <section class="github section">
+            
+                @*<section class="github section">
                     <div class="section-inner">
                         <div id="ghfeed" class="ghfeed">
                         </div><!--//ghfeed-->
                     </div><!--//secton-inner-->
-                </section><!--//section-->
+                </section><!--//section-->*@
                
             </div><!--//primary-->
             @Html.Partial("RightPane")
@@ -102,8 +104,8 @@
 <script type="text/javascript" src="/Scripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="/Scripts/jquery-rss/dist/jquery.rss.min.js"></script>
 <!-- github activity plugin -->
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-<script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+@*<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>*@
 <!-- custom js -->
 <script type="text/javascript" src="/Scripts/main.min.js"></script>
 </body>
