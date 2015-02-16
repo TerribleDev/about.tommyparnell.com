@@ -19,7 +19,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <NuGetPackageImportStamp>a9cde693</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>456e3d5e</NuGetPackageImportStamp>
+    <ApplicationInsightsResourceId>/subscriptions/6332a4fe-3d5b-4857-9206-6dedd406f451/resourcegroups/WebResourceGroup/providers/microsoft.insights/components/tparnellAbout</ApplicationInsightsResourceId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,6 +42,15 @@
   <ItemGroup>
     <Reference Include="Microsoft.ApplicationInsights">
       <HintPath>..\..\packages\Microsoft.ApplicationInsights.0.13.0-build26067\lib\net40\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.Extensibility.PerfCollector">
+      <HintPath>..\..\packages\Microsoft.ApplicationInsights.PerformanceCollector.0.13.0-build26067\lib\net40\Microsoft.ApplicationInsights.Extensibility.PerfCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry">
+      <HintPath>..\..\packages\Microsoft.ApplicationInsights.RuntimeTelemetry.0.13.0-build26067\lib\net45\Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.Extensibility.Web">
+      <HintPath>..\..\packages\Microsoft.ApplicationInsights.Web.0.13.0-build26067\lib\net45\Microsoft.ApplicationInsights.Extensibility.Web.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Diagnostics.Instrumentation.Extensions.Intercept">
