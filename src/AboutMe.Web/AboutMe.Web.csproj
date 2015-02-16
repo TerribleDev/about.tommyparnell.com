@@ -132,6 +132,9 @@
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config" />
     <None Include="Properties\PublishProfiles\tparnellAboutMe.pubxml" />
+    <Content Include="Scripts\telemetry.min.js.map">
+      <DependentUpon>telemetry.min.js</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -183,6 +186,10 @@
       <DependentUpon>main.js</DependentUpon>
     </Content>
     <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\telemetry.js" />
+    <Content Include="Scripts\telemetry.min.js">
+      <DependentUpon>telemetry.js</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-2.1.3.min.map" />
     <Content Include="Views\Index\Index.cshtml" />
