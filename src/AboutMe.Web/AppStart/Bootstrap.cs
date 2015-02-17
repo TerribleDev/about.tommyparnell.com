@@ -13,6 +13,7 @@ namespace AboutMe.Web.AppStart
             conventions.StaticContentsConventions.AddDirectory("Scripts");
             conventions.StaticContentsConventions.AddDirectory("fonts");
             conventions.StaticContentsConventions.AddFile("/robots.txt",System.IO.Path.Combine("Content", "robots.txt"));
+            conventions.StaticContentsConventions.AddFile("/sitemap.xml", System.IO.Path.Combine("Content", "sitemap.xml"));
         }
     }
 }
