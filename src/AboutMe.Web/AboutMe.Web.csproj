@@ -141,6 +141,9 @@
     <Content Include="robots.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Scripts\jquery.easing.1.3.min.js">
+      <DependentUpon>jquery.easing.1.3.js</DependentUpon>
+    </Content>
     <Content Include="sitemap.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -152,6 +155,9 @@
     <None Include="Properties\PublishProfiles\tparnellAboutMe.pubxml" />
     <Content Include="Scripts\telemetry.min.js.map">
       <DependentUpon>telemetry.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery.easing.1.3.min.js.map">
+      <DependentUpon>jquery.easing.1.3.min.js</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
