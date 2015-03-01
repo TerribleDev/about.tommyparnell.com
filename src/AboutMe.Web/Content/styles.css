@@ -33,6 +33,7 @@ a {
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
     a:hover {
@@ -47,6 +48,7 @@ a {
         -moz-transition: all 0.4s ease-in-out;
         -ms-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
         font-family: 'Montserrat', arial, sans-serif;
         padding: 8px 16px;
         font-weight: bold;
@@ -298,6 +300,7 @@ iframe {
             -moz-transform: rotate(45deg) translate3d(0, 0, 0);
             -ms-transform: rotate(45deg) translate3d(0, 0, 0);
             -o-transform: rotate(45deg) translate3d(0, 0, 0);
+            transform: rotate(45deg) translate3d(0, 0, 0);
         }
 
             .latest .featured-image .ribbon .text:before,
@@ -412,7 +415,7 @@ iframe {
     font-size: 16px;
     position: relative;
     margin-top: 0;
-    margin-bottom: 10;
+    margin-bottom: 10px;
 }
 
     .skills .skillset .level-title .level-label {

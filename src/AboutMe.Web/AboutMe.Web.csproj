@@ -129,6 +129,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.css">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap.rtl.min.css">
+      <DependentUpon>bootstrap.rtl.css</DependentUpon>
+    </Content>
+    <Content Include="Content\styles.min.css">
+      <DependentUpon>styles.css</DependentUpon>
+    </Content>
     <Content Include="robots.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -137,6 +146,9 @@
     </Content>
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config" />
+    <Content Include="Content\bootstrap.rtl.css.map">
+      <DependentUpon>bootstrap.rtl.css</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\tparnellAboutMe.pubxml" />
     <Content Include="Scripts\telemetry.min.js.map">
       <DependentUpon>telemetry.min.js</DependentUpon>
