@@ -141,6 +141,10 @@
     <Content Include="robots.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Scripts\GAnalytics.js" />
+    <Content Include="Scripts\GAnalytics.min.js">
+      <DependentUpon>GAnalytics.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\jquery.easing.1.3.min.js">
       <DependentUpon>jquery.easing.1.3.js</DependentUpon>
     </Content>
@@ -158,6 +162,9 @@
     </Content>
     <Content Include="Scripts\jquery.easing.1.3.min.js.map">
       <DependentUpon>jquery.easing.1.3.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\GAnalytics.min.js.map">
+      <DependentUpon>GAnalytics.min.js</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
