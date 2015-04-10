@@ -1,6 +1,4 @@
 jQuery(document).ready(function ($) {
-    /*======= Skillset *=======*/
-
     $('.level-bar-inner').css('width', '0');
 
     $(window).on('load', function () {
@@ -11,6 +9,7 @@ jQuery(document).ready(function ($) {
                 width: itemWidth
             }, 800);
         });
+
     });
 
     /* Bootstrap Tooltip for Skillset */
@@ -44,5 +43,10 @@ jQuery(document).ready(function ($) {
             entryTemplate: '<h3 class="title"><a href="{url}" target="_blank">{title}</a></h3><div><p>{shortBodyPlain}</p><a class="more-link" href="{url}" target="_blank"><i class="fa fa-external-link"></i>Read more</a></div>'
         }
     );
+    window.GitHubActivity.feed({
+        username: "tparnell8",
+        selector: "#feed",
+        limit: 20 // optional
+    });
 
 });

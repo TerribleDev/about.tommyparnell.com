@@ -7,25 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AboutMe", "src\AboutMe\Abou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AboutMe.Web", "src\AboutMe.Web\AboutMe.Web.csproj", "{44897F13-6E56-43D2-813C-50FC8100064A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{87E584F7-EF46-4EB9-8C6B-106D8AEF097F}"
-	ProjectSection(SolutionItems) = preProject
-		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
-		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{A5C33959-FEA3-4CDA-AAC7-B67A30404D08}"
-	ProjectSection(SolutionItems) = preProject
-		PublishScripts\Configurations\AboutMeWeb-WAWS-dev.json = PublishScripts\Configurations\AboutMeWeb-WAWS-dev.json
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F526845D-6E6D-4DED-B5BD-7113ED3C3F68}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{411CB67C-50C5-4C1D-B0B5-515EABECB553}"
-	ProjectSection(SolutionItems) = preProject
-		WebEssentials-Settings.json = WebEssentials-Settings.json
 	EndProjectSection
 EndProject
 Global
@@ -45,8 +29,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{A5C33959-FEA3-4CDA-AAC7-B67A30404D08} = {87E584F7-EF46-4EB9-8C6B-106D8AEF097F}
 	EndGlobalSection
 EndGlobal
