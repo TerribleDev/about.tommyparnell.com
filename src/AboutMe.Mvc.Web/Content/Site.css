@@ -24,10 +24,10 @@ textarea {
 }
 
 .profile-outer img {
-    -moz-animation: profile-image 1.5s ease-in;
-    -o-animation: profile-image 1.5s ease-in;
-    -webkit-animation: profile-image 1.5s ease-in;
-    animation: profile-image 1.5s ease-in;
+    -moz-animation: profile-image 1s ease-in;
+    -o-animation: profile-image 1s ease-in;
+    -webkit-animation: profile-image 1s ease-in;
+    animation: profile-image 1s ease-in;
 }
 
 
