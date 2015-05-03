@@ -22,6 +22,7 @@
     <IISExpressUseClassicPipelineMode />
     <NuGetPackageImportStamp>937356fd</NuGetPackageImportStamp>
     <ApplicationInsightsResourceId>/subscriptions/6332a4fe-3d5b-4857-9206-6dedd406f451/resourcegroups/WebResourceGroup/providers/microsoft.insights/components/tparnellAbout</ApplicationInsightsResourceId>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -187,6 +188,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="ApplicationInsights.config" />
     <Content Include="Images\sqprofile.jpg" />
+    <Content Include="Images\Untappd2.jpg" />
     <Content Include="Scripts\GAnalytics.min.js.map">
       <DependentUpon>GAnalytics.min.js</DependentUpon>
     </Content>
