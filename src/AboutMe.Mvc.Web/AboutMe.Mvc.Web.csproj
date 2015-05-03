@@ -186,6 +186,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="ApplicationInsights.config" />
+    <Content Include="Images\sqprofile.jpg" />
     <Content Include="Scripts\GAnalytics.min.js.map">
       <DependentUpon>GAnalytics.min.js</DependentUpon>
     </Content>

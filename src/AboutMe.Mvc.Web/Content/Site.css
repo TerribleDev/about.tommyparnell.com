@@ -22,3 +22,32 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.profile-outer img {
+    -moz-animation: profile-image 1.5s ease-in;
+    -o-animation: profile-image 1.5s ease-in;
+    -webkit-animation: profile-image 1.5s ease-in;
+    animation: profile-image 1.5s ease-in;
+}
+
+
+
+.profile-image{
+   
+     border-radius: 50%
+}
+
+@-moz-keyframes profile-image {
+    from { border-radius: 0 }
+    to { border-radius: 50% }
+}
+
+@-webkit-keyframes profile-image {
+    from { border-radius: 0 }
+    to { border-radius: 50% }
+}
+
+@keyframes profile-image {
+    from { border-radius: 0 }
+    to { border-radius: 50% }
+}
