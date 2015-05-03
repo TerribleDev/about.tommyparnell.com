@@ -14,7 +14,7 @@ namespace AboutMe.Mvc.Web.Controllers
 {
     public class HomeController : Controller
     {
-        [OutputCache(Duration = 15)]
+        [OutputCache(Duration = 900)]
         public async Task<ActionResult> Index()
         {
             var currentBeer = string.Empty;
