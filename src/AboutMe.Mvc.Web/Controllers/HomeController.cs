@@ -25,7 +25,7 @@ namespace AboutMe.Mvc.Web.Controllers
                 var response = await new Repository().GetAsync<UserActivityFeed>(req, "tparnell");
                 currentBeer = response.Response.Checkins.Items[0].Beer.BeerName;
             }
-            catch
+            catch(Exception)
             {
                 
             }
