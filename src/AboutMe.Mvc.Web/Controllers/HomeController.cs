@@ -14,7 +14,7 @@ namespace AboutMe.Mvc.Web.Controllers
 {
     public class HomeController : Controller
     {
-        [OutputCache(Duration = 900)]
+        [OutputCache(Duration = 720)]
         public async Task<ActionResult> Index()
         {
             var currentBeer = string.Empty;
@@ -23,7 +23,7 @@ namespace AboutMe.Mvc.Web.Controllers
                 var req = new UnAuthenticatedUntappdCredentials(ConfigurationManager.AppSettings["untappdkey"],
                 ConfigurationManager.AppSettings["untappdsecret"]);
                 var response = await new Repository().GetAsync<UserActivityFeed>(req, "tparnell");
-                currentBeer = response.Response.Checkins.Items[0].Beer.BeerName;
+                currentBeer = response.Response.Checkins.Items.First(a => DateTime.Parse(a.CreatedAt) > DateTime.Now.AddHours(-4)).Beer.BeerName;
             }
             catch(Exception)
             {
