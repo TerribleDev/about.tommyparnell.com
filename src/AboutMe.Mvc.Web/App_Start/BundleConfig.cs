@@ -21,7 +21,9 @@ namespace AboutMe.Mvc.Web
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/site").Include(
-                        "~/Scripts/main.js"));
+                        "~/Scripts/main.js",
+                        "~/Scripts/Mustache.js",
+                        "~/Scripts/GithubActivity.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
@@ -30,7 +32,9 @@ namespace AboutMe.Mvc.Web
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/Content/font-awesome.css"));
+                      "~/Content/font-awesome.css",
+                      "~/Content/GithubActivity.css",
+                      "~/Content/styles.min.css"));
         }
     }
 }
