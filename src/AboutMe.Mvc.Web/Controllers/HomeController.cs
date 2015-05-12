@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using AboutMe.Mvc.Web.Models;
-using Untappd.Net.Client;
+using Untappd.Net.Authentication;
 using Untappd.Net.Request;
 using Untappd.Net.Responses.Feeds.UserActivityFeed;
 
@@ -20,13 +20,18 @@ namespace AboutMe.Mvc.Web.Controllers
             {
                 var req = new UnAuthenticatedUntappdCredentials(ConfigurationManager.AppSettings["untappdkey"],
                 ConfigurationManager.AppSettings["untappdsecret"]);
-                var response = await new Repository().GetAsync<UserActivityFeed>(req, "tparnell");
-                currentBeer = response.Response.Checkins.Items.First(a => DateTime.Parse(a.CreatedAt) > DateTime.Now.AddHours(-4)).Beer.BeerName;
+                var response = await new Repository(false).GetAsync<UserActivityFeed>(req, "tparnell");
+                if (response != null)
+                {
+                    currentBeer = response.Response.Checkins.Items.First(a => DateTime.Parse(a.CreatedAt) > DateTime.Now.AddHours(-4)).Beer.BeerName;
+                }
             }
-            catch(Exception)
+            catch(ArgumentNullException)
             {
                 
             }
+                
+            
             var t = new HomeViewModel() { CurrentBeer = currentBeer };
             return View(t);
         }
