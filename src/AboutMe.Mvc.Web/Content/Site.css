@@ -51,3 +51,9 @@ textarea {
     from { border-radius: 0 }
     to { border-radius: 50% }
 }
+
+@media (min-width: 992px) {
+    .pull-right-md {
+        float: right;
+    }
+}
