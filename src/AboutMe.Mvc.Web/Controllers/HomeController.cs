@@ -26,10 +26,8 @@ namespace AboutMe.Mvc.Web.Controllers
                     currentBeer = response.Response.Checkins.Items.First(a => DateTime.Parse(a.CreatedAt) > DateTime.Now.AddHours(-4)).Beer.BeerName;
                 }
             }
-            catch(ArgumentNullException)
-            {
-                
-            }
+            catch(ArgumentNullException){}
+            catch (InvalidOperationException) { }
                 
             
             var t = new HomeViewModel() { CurrentBeer = currentBeer };
