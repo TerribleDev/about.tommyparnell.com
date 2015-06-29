@@ -52,7 +52,7 @@ jQuery(document).ready(function ($) {
     var buildFinalFantasy = function (data) {
         return "<aside class=\"list aside section\"> \
         <div class=\"section-inner\"> \
-            <h2 class=\"heading\">Final Fantasy Data</h2> \
+            <h2 class=\"heading\">Final Fantasy XIV Data</h2> \
             <div class=\"content\"> \
                 <ul class=\"list-unstyled\"> \
                     <li><i class=\"fa \"></i><img src=\"" + data.avatar + "\" </li> \
