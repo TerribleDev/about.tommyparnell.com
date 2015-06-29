@@ -61,6 +61,7 @@ jQuery(document).ready(function ($) {
                     <li><i class=\"fa \"></i> Active Job: " + data.activeJob+ " </li> \
                     <li><i class=\"fa \"></i> Current City: " + data.city+ " </li> \
                     <li><i class=\"fa \"></i> World: " + data.world + " </li> \
+                    <li><i >Data supplied by <a href=\"http://xivsync.com/\"> XVISync API </a></i>  </li> \
                </ul> \
             </div> \
         </div> \
