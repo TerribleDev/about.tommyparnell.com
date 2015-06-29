@@ -50,10 +50,12 @@ jQuery(document).ready(function ($) {
     });
 
     var buildFinalFantasy = function (data) {
-        return "<aside class=\"list aside section\"> \
+        return "<aside class=\"aside section\"> \
         <div class=\"section-inner\"> \
             <h2 class=\"heading\">Final Fantasy XIV Data</h2> \
             <div class=\"content\"> \
+             <div class=\"row\"> \
+              <div class=\"col-md-6\"> \
                 <ul class=\"list-unstyled\"> \
                     <li><i class=\"fa \"></i><img src=\"" + data.avatar + "\" </li> \
                     <li><i class=\"fa \"></i> Name: <a href=\"http://na.finalfantasyxiv.com/lodestone/character/8696200/\"> " + data.name + "</a> </li> \
@@ -63,6 +65,11 @@ jQuery(document).ready(function ($) {
                     <li><i class=\"fa \"></i> World: " + data.world + " </li> \
                     <li><i >Data supplied by <a href=\"http://xivsync.com/\"> XVISync API </a></i>  </li> \
                </ul> \
+                </div> \
+                <div class=\"col-md-6\"> \
+                     <img class=\"img-responsive\" src=\"" + data.portrait + " \" /> \
+                </div> \
+              </div> \
             </div> \
         </div> \
     </aside>";
