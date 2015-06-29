@@ -229,9 +229,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\lodestoneapi.js" />
     <Content Include="Scripts\main.js" />
-    <Content Include="Scripts\main.min.js">
-      <DependentUpon>main.js</DependentUpon>
-    </Content>
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\Mustache.js" />
     <Content Include="Scripts\npm.js" />
@@ -261,9 +258,6 @@
     <Content Include="Views\Home\RightPane.cshtml" />
     <Content Include="Scripts\telemetry.min.js.map">
       <DependentUpon>telemetry.min.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\main.min.js.map">
-      <DependentUpon>main.min.js</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
