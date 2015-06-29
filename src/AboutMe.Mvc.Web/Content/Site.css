@@ -65,6 +65,7 @@ textarea {
     width: 100%;
     height: 15%;
     z-index: 10000;
+    border-bottom: 1px solid #778492
 }
     .header.stick{
         border-top: 0px;
