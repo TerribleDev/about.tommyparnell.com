@@ -80,12 +80,12 @@ jQuery(document).ready(function ($) {
             $('.secondary').append(buildFinalFantasy(data));
         }
     });
-   
+
     $(window).scroll(function () {
         var sticky = $('.header'),
             scroll = $(window).scrollTop();
 
-        if (scroll >= 100) sticky.addClass('stick');
+        if (scroll >= 131) sticky.addClass('stick');
         else sticky.removeClass('stick');
     });
 
