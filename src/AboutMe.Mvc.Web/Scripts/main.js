@@ -49,4 +49,30 @@ jQuery(document).ready(function ($) {
         limit: 20 // optional
     });
 
+    var buildFinalFantasy = function (data) {
+        return "<aside class=\"list aside section\"> \
+        <div class=\"section-inner\"> \
+            <h2 class=\"heading\">Final Fantasy Data</h2> \
+            <div class=\"content\"> \
+                <ul class=\"list-unstyled\"> \
+                    <li><i class=\"fa \"></i><img src=\"" + data.avatar + "\" </li> \
+                    <li><i class=\"fa \"></i> Name: <a href=\"http://na.finalfantasyxiv.com/lodestone/character/8696200/\"> " + data.name + "</a> </li> \
+                    <li><i class=\"fa \"></i> Active Level: " + data.activeLevel + " </li> \
+                    <li><i class=\"fa \"></i> Active Job: " + data.activeJob+ " </li> \
+                    <li><i class=\"fa \"></i> Current City: " + data.city+ " </li> \
+                    <li><i class=\"fa \"></i> World: " + data.world + " </li> \
+               </ul> \
+            </div> \
+        </div> \
+    </aside>";
+    };
+
+    LodestoneAPI.Search.Character(8696200, null, function (data) {
+        if (data !== undefined && data !== null) {
+            $('.secondary').append(buildFinalFantasy(data));
+        }
+    });
+   
+
+
 });

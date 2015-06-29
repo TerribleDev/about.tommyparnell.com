@@ -21,9 +21,10 @@ namespace AboutMe.Mvc.Web
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/site").Include(
-                        "~/Scripts/main.js",
                         "~/Scripts/Mustache.js",
-                        "~/Scripts/GithubActivity.js"));
+                        "~/Scripts/GithubActivity.js",
+                        "~/Scripts/lodestoneapi.js",
+                        "~/Scripts/main.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
